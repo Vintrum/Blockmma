@@ -1,4 +1,4 @@
-# CS202 (2022 Winter) Project: Interacting with "emulated" hardware accelerators
+# Interacting with "emulated" hardware accelerators
 
 ## Overview
 
@@ -97,26 +97,7 @@ For each run, the script will output the result of each running program. If you 
 
 2. Test the developed module: It's your responsibility to test the developed kernel module thoroughly. Our benchmark is just a starting point of your testing. We will generate a different test sequence to test your program when grading. Your module should support an infinite number of user processes and different numbers of accelerators at the b with each container.
 
-3. Grading guidelines: 
-- A: 40% -- if we are able to compile your kernel module and at least gets your name(s) printed through the output.
-- B: 20% -- if you pass A and the benchmark can pass all single process, single accelerator cases with matrix sizes up to 1024. 
-- C: 20% -- if you pass A and B and the benchmark can pass 
-  - all single process, single accelerator cases with matrix sizes up to 2048 and fairly distribute tasks among accelerators. 
-  - all single process, multiple accelerator cases with matrix sizes up to 2048 and fairly distribute tasks among accelerators.
-- D: 15% -- if you pass A and B and C and the benchmark can pass 
-  - all single process, single accelerator cases with matrix sizes up to 2048. 
-  - all single process, multiple accelerator cases with matrix sizes up to 2048 and fairly distribute tasks among accelerators. 
-  - all multiple processes, multiple accelerator cases with matrix sizes up to 2048 and fairly distribute tasks among accelerators
-- E: 5% -- if you satify all of A, B, C, D and if we substitute benchmark with benchmark_bonus and it still passes A, B, C, D.
 
-## Deliverables
-
-You only need to (or say you can only) turn in the core.c file from the kernel_module/src. All your modifications should be limited within this file. Exactly 1 member of each group should submit the source code. All group members' names, UCRNetIDs and SIDs should be returned through the blockmma_author function located in core.c.
-
-The due date is 3/3/2022. There won't be any extension and we won't accept late submissions.
-
-You will need to turn in it through eLearn and select your members properly during the submission process.
-https://elearn.ucr.edu/courses/31822/assignments/293869
 
 ## Reference and hints
 
